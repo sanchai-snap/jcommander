@@ -162,7 +162,7 @@ public class JCommander {
 
   private Comparator<? super ParameterDescription> m_parameterDescriptionComparator
       = new Comparator<ParameterDescription>() {
-        @Override
+
         public int compare(ParameterDescription p0, ParameterDescription p1) {
           return p0.getLongestName().compareTo(p1.getLongestName());
         }
@@ -1091,7 +1091,6 @@ public class JCommander {
 
 private class DefaultVariableArity implements IVariableArity {
 
-    @Override
     public int processVariableArity(String optionName, String[] options) {
         int i = 0;
         while (i < options.length && !isOption(options, options[i])) {

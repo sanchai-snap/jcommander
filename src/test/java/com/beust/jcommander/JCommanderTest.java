@@ -642,7 +642,6 @@ public class JCommanderTest {
   public void mainParameterShouldBeValidate() {
     class V implements IParameterValidator {
 
-      @Override
       public void validate(String name, String value) throws ParameterException {
         Assert.assertEquals("a", value);
       }
